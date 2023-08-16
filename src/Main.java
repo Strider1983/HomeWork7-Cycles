@@ -34,5 +34,15 @@ public class Main {
             year = year + 1;
             System.out.println("Год " + year + " численность населения составляет " + population);
         }
+        System.out.println("___________________");
+        System.out.println("Задача №4");
+        int deposit = 15000;
+        int bankRate = 7;
+        int mont = 0;
+        while (deposit < 12_000_000) {
+            deposit = deposit + deposit / 100 * 7;
+            mont = mont + 1;
+            System.out.println("Месяц " + mont + " сумма накоплений составляет " + deposit + " рублей");
+        }
     }
 }
