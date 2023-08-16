@@ -22,5 +22,17 @@ public class Main {
         for (; i>=1; i = i - 1) {
             System.out.print(i + " ");
         }
+        System.out.println();
+        System.out.println("___________________");
+        System.out.println("Задача №3");
+        int population = 12_000_000;
+        int birthRate = 17 * population / 1000;
+        int mortality = 8 * population / 1000;
+        int year = 0;
+        while (year < 10) {
+            population = population + birthRate - mortality;
+            year = year + 1;
+            System.out.println("Год " + year + " численность населения составляет " + population);
+        }
     }
 }
