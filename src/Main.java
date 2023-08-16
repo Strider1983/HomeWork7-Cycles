@@ -14,12 +14,12 @@ public class Main {
         System.out.println("___________________");
         System.out.println("Задача №2");
         int i = 0;
-        while (i<10) {
+        while (i < 10) {
             i = i + 1;
             System.out.print(i + " ");
         }
         System.out.println();
-        for (; i>=1; i = i - 1) {
+        for (; i >= 1; i = i - 1) {
             System.out.print(i + " ");
         }
         System.out.println();
@@ -40,9 +40,21 @@ public class Main {
         int bankRate = 7;
         int mont = 0;
         while (deposit < 12_000_000) {
-            deposit = deposit + deposit / 100 * 7;
+            deposit = deposit + deposit / 100 * bankRate;
             mont = mont + 1;
             System.out.println("Месяц " + mont + " сумма накоплений составляет " + deposit + " рублей");
+        }
+        System.out.println("___________________");
+        System.out.println("Задача №5");
+        int depos = 15000;
+        int bankRat = 7;
+        int mon = 0;
+        while (depos < 12_000_000) {
+            depos = depos + depos / 100 * bankRat;
+            mon = mon + 1;
+            if (mon % 6 == 0) {
+                System.out.println("Месяц " + mon + " сумма накоплений составляет " + depos + " рублей");
+            }
         }
     }
 }
