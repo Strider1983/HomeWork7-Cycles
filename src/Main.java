@@ -76,5 +76,15 @@ public class Main {
             friday = friday + 7;
             if (friday <= 31) {System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");}
         }
+        System.out.println("___________________");
+        System.out.println("Задача №8");
+        int thisYear = 2023;
+        int pastYear = thisYear - 200;
+        int futureYear = thisYear + 100;
+        int cometYear = 0;
+        while (cometYear < futureYear) {
+            cometYear = cometYear + 79;
+            if (cometYear >= pastYear && cometYear <= futureYear) {System.out.println(cometYear);}
+        }
     }
 }
