@@ -68,5 +68,13 @@ public class Main {
                 System.out.println("месяц " + period + "-й сумма накоплений составила " + money + " рублей");
             }
         }
+        System.out.println("___________________");
+        System.out.println("Задача №7");
+        int firstFriday = 3;
+        int friday = firstFriday - 7;
+        while (friday <31) {
+            friday = friday + 7;
+            if (friday <= 31) {System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");}
+        }
     }
 }
