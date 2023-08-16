@@ -56,5 +56,17 @@ public class Main {
                 System.out.println("Месяц " + mon + " сумма накоплений составляет " + depos + " рублей");
             }
         }
+        System.out.println("___________________");
+        System.out.println("Задача №6");
+        int money = 15000;
+        int percent = 7;
+        int period = 0;
+        while (period < 12 * 9) {
+            money = money + money * percent / 100;
+            period = period + 1;
+            if (period % 6 == 0) {
+                System.out.println("месяц " + period + "-й сумма накоплений составила " + money + " рублей");
+            }
+        }
     }
 }
