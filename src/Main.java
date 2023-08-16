@@ -11,5 +11,16 @@ public class Main {
             month = month + 1;
             System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
         }
+        System.out.println("___________________");
+        System.out.println("Задача №2");
+        int i = 0;
+        while (i<10) {
+            i = i + 1;
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        for (; i>=1; i = i - 1) {
+            System.out.print(i + " ");
+        }
     }
 }
